@@ -1,0 +1,5 @@
+bin_PROGRAMS = rhasher
+rhasher_SOURCES = rhasher.c
+
+AM_CPPFLAGS = @READLINE_CFLAGS@
+rhasher_LDADD = @RHASH_LIBS@ @READLINE_LIBS@

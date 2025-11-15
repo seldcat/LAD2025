@@ -1,0 +1,30 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: guess100 1.0\n"
+"Report-Msgid-Bugs-To: bugs@example.invalid\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Error: standard input was closed (EOF).\n"
+msgstr "Ошибка: стандартный ввод был закрыт (EOF).\n"
+
+msgid "Invalid answer. Please type exactly \"Yes\" or \"No\".\n"
+msgstr "Неверный ответ. Пожалуйста, введите строго \"Yes\" или \"No\".\n"
+
+msgid "Is your number greater than %d? (Yes/No): "
+msgstr "Ваше число больше, чем %d? (Yes/No): "
+
+msgid "Think of a number from 1 to 100."
+msgstr "Загадайте число от 1 до 100."
+
+msgid "Press Enter when you're ready... "
+msgstr "Нажмите Enter, когда будете готовы... "
+
+msgid "Your number is %d.\n"
+msgstr "Ваше число — %d.\n"

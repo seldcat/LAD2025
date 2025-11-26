@@ -1,0 +1,41 @@
+--- maze_v3.c	2025-12-16 00:32:38
++++ maze_v4.c	2025-12-16 00:33:59
+@@ -8,7 +8,7 @@
+ static char **maze;
+ static int *used;
+ 
+-/* новые параметры версии v3 */
++/* параметры версии v3+ */
+ static char PASS = '.';
+ static char WALL = '#';
+ 
+@@ -50,14 +50,15 @@
+ }
+ 
+ int main(int argc, char **argv) {
+-    if (argc != 3) {
+-        fprintf(stderr, "usage: %s PW SIZE\n", argv[0]);
++    if (argc != 4) {
++        fprintf(stderr, "usage: %s SEED PW SIZE\n", argv[0]);
+         return 1;
+     }
+ 
+-    PASS = argv[1][0];
+-    WALL = argv[1][1];
+-    N = atoi(argv[2]);
++    unsigned seed = (unsigned)atoi(argv[1]);
++    PASS = argv[2][0];
++    WALL = argv[2][1];
++    N = atoi(argv[3]);
+ 
+     H = 2*N + 1;
+     W = 2*N + 1;
+@@ -68,7 +69,7 @@
+ 
+     used = calloc(N * N, sizeof(int));
+ 
+-    srand((unsigned)time(NULL));
++    srand(seed);
+     init_maze();
+     dfs(0, 0);
+ 

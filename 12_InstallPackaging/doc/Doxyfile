@@ -1,0 +1,58 @@
+# General configuration options
+PROJECT_NAME           = "hello-greet"
+PROJECT_BRIEF          = "A simple demo project showing Autotools, libtool, gettext, and Doxygen"
+PROJECT_LOGO           = ""
+OUTPUT_DIRECTORY       = doc
+CREATE_SUBDIRS         = YES
+EXCLUDE                = 
+EXCLUDE_SYMLINKS       = NO
+
+# Input files and directories to be processed
+INPUT                  = ../src/hello-greet.c ../lib/greet.c ../lib/greet.h
+RECURSIVE              = NO
+FILE_PATTERNS          = *.c *.h
+EXCLUDE_PATTERNS       =
+
+# Source browser
+SOURCE_BROWSER         = YES
+INLINE_INHERITED_MEMBERS = YES
+INLINE_COLLAPSED       = YES
+COLLABORATION_GRAPH    = YES
+GENERATE_TREEVIEW      = YES
+
+# HTML related configuration
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+HTML_HEADER            = 
+HTML_FOOTER            = 
+HTML_STYLESHEET        = 
+HTML_COLORSTYLE        = AUTO
+HTML_TIMESTAMP         = YES
+GENERATE_HTMLHELP      = NO
+HTML_DYNAMIC_SECTIONS  = YES
+
+# LaTeX output configuration (optional, in case you want to generate PDFs)
+GENERATE_LATEX         = NO
+LATEX_OUTPUT           = latex
+
+# Man page output
+GENERATE_MAN           = YES
+MAN_OUTPUT             = man
+
+# Enable or disable specific output formats (here we enable Markdown for mainpage)
+USE_MDFILE_AS_MAINPAGE = mainpage.md
+
+# Other options
+QUIET                  = YES
+WARNINGS               = YES
+WARN_IF_UNDOCUMENTED   = YES
+WARN_NO_PARAMDOC       = YES
+
+# Custom configurations for input
+OPTIMIZE_OUTPUT_FOR_C  = YES
+CASE_SENSITIVITY       = NO
+ENABLE_PREPROCESSING   = YES
+MACRO_EXPANSION        = YES
+
+# Versioning info
+PROJECT_VERSION        = "1.0"

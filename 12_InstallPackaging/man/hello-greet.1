@@ -1,0 +1,26 @@
+.TH HELLO-GREET 1 "2025-12-16" "hello-greet 1.0"
+.SH NAME
+hello-greet \- localized greeting demo using libgreet
+.SH SYNOPSIS
+.B hello-greet
+.RI [ --help ] " [NAME]"
+.SH DESCRIPTION
+.B hello-greet
+prints a localized greeting message using GNU gettext and the shared library
+.BR libgreet .
+If NAME is not provided, a default is used.
+.SH OPTIONS
+.TP
+.BR --help
+Show help in English and Russian and exit.
+.SH ENVIRONMENT
+.TP
+.B APP_LOCALEDIR
+Override locale directory (useful for running from build tree).
+.TP
+.B LANGUAGE
+Standard gettext variable to pick language (e.g. ru_RU.UTF-8).
+.SH SEE ALSO
+.BR gettext (1)
+.SH AUTHOR
+Student assignment project

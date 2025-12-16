@@ -1,0 +1,7 @@
+DOMAIN = $(PACKAGE)
+subdir = po
+top_builddir = ..
+XGETTEXT_OPTIONS = --keyword=_ --from-code=UTF-8
+COPYRIGHT_HOLDER = hello-greet
+PACKAGE_GNU = no
+MSGID_BUGS_ADDRESS = bugs@example.invalid

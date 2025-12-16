@@ -1,0 +1,6 @@
+PROJECT_NAME            = "Number Guessing Game"
+INPUT                   = number-game.c
+GENERATE_HTML           = YES
+GENERATE_LATEX          = NO
+QUIET                   = YES
+USE_MDFILE_AS_MAINPAGE  = doc/mainpage.md
